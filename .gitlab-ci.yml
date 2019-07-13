@@ -54,5 +54,6 @@ package:jdk8:
 #      fi
     - 'mvn $MAVEN_CLI_OPTS -DskipTests clean package' # -s ci_settings.xml
     - 'java -jar target/benchmarks.jar'
+    - 'cat /proc/cpuinfo | head -10'
 #  only:
 #    - master
